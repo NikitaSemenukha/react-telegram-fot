@@ -1,0 +1,144 @@
+.notify-me {
+    width: 96vw;
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.notify-me h3 {
+    height: 3.2vh;
+    width: 76vw;
+    font-size: 3.5vw;
+    font-weight: 400;
+    text-align: center;
+    line-height: 3.2vh;
+}
+
+.notify-me.dark h3 {
+    background-color: #9A9A9A;
+    color: var(--light-color)
+}
+
+.notify-me.light h3 {
+    background-color: #474646;
+    color: #d9d9d9;
+}
+
+.notify-me h4 {
+    display: none;
+}
+
+.notify-me.alert {
+    background-color: transparent;
+}
+
+.notify-me.alert h3 {
+    display: none;
+}
+
+.notify-me.alert div {
+    display: none;
+}
+
+.notify-me.alert h4 {
+    font-size: 4vw;
+    font-weight: 400;
+    display: flex;
+    text-align: center;
+}
+
+
+.notify-me p {
+    width: 47vw;
+    height: 4vh;
+    margin-top: 1vh;
+    font-size: 3.8vw;
+    font-weight: 600;
+    text-align: center;
+    line-height: 4.3vh;
+    border: none;
+}
+
+.notify-me.dark p {
+    background-color: #D9D9D9;
+    color: var(--dark-color);
+}
+
+.notify-me.light p {
+    background-color: #474646;
+    color: var(--light-color);
+}
+
+.notify-me.dark p:hover {
+    background-color: #9A9A9A;
+}
+
+.notify-me.light p:hover {
+    background-color: var(--dark-color);
+}
+
+
+.converter {
+    width: 95vw;
+    margin-top: 4vh;
+    font-size: 5vw;
+    margin-bottom: 4vh;
+    padding-left: 1.5vw;
+}
+
+.converter-text.dark {
+    color: var(--selected-color)
+}
+
+.converter-text.light {
+    color: #B58B00
+}
+
+
+.converter-row {
+    margin-top: 1vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.converter-row p {
+    height: 5vh;
+    width: 14vw;
+    font-size: 4.5vw;
+    text-align: center;
+    line-height: 5.2vh;
+    color: grey;
+}
+
+.converter-row input {
+    height: 5vh;
+    width: 29vw;
+    font-size: 4vw;
+    border: none;
+    outline: none;
+    text-align: end;
+}
+
+
+.left-side {
+    background-color: #D9D9D9;
+}
+
+.right-side {
+    background-color: var(--light-color);
+}
+
+.converter-row input[type=number] {
+    padding-right: 2vw;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.arrows {
+    background: linear-gradient(90deg, #D9D9D9 50%, var(--light-color) 50%);
+}
+

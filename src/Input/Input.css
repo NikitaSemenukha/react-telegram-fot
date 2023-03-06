@@ -1,0 +1,107 @@
+.search {
+    height: 15vh;
+    max-height: 15vh;
+    width: calc(75vw - var(--scrollbar-width));
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transition: max-height 0.5s ease-out;
+}
+
+.search.dark {
+    background-color: var(--dark-color);
+    border-bottom: 0.3vw solid var(--light-color);
+}
+
+.search.light {
+    background-color: var(--light-color);
+    border-bottom: 0.3vw solid var(--dark-color);
+}
+
+.search.hidden {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+}
+
+
+.input {
+    width: calc(52vw - var(--scrollbar-width));
+    height: 6vh;
+    border-radius: 0 1.2vh 1.2vh 0;
+    font-size: 3.2vh;
+    font-weight: 600;
+    text-align: start;
+    outline: none;
+    border: none;
+}
+
+.input.dark {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+}
+
+input.light {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+}
+
+.input:focus {
+    width: calc(52.6vw - var(--scrollbar-width));
+    height: calc(6vh + 0.6vw);
+    border: 0.6vw solid var(--selected-color);
+    border-left: none;
+}
+
+.input::placeholder {
+    padding-right: 1.5vw;
+}
+
+.input.dark::placeholder {
+    color: var(--dark-color)
+}
+
+.input.light::placeholder {
+    color: var(--light-color);
+}
+
+
+.icon-search {
+    padding-left: 1vw;
+    width: 6vh;
+    height: 6vh;
+    border-radius: 1.2vh 0 0 1.2vh;
+}
+
+.icon-search.dark {
+    background-color: var(--light-color);
+}
+
+.icon-search.dark circle {
+    fill: var(--dark-color)
+}
+
+.icon-search.dark line {
+    stroke: var(--dark-color);
+}
+
+.icon-search.light {
+    background-color: var(--dark-color);
+}
+
+.icon-search.light circle {
+    fill: var(--light-color)
+}
+
+.icon-search.light line {
+    stroke: var(--light-color);
+}
+
+.icon-search.focused {
+    width: calc(6vh + 0.6vw);
+    height: calc(6vh + 0.6vw);
+    border: 0.6vw solid var(--selected-color);
+    border-right: none
+}

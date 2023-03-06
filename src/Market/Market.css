@@ -1,0 +1,79 @@
+.market {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    outline: none;
+    border: none;
+}
+
+
+.crypto-info {
+    max-height: 300vh;
+    transition: max-height 2s cubic-bezier(0,0,1,1);
+    overflow: hidden;
+    contain: content;
+ }
+
+.crypto-info.hidden {
+    max-height: 0;
+    transition: max-height 0.5s cubic-bezier(0,1,0,1);
+}
+
+.crypto-info.dark {
+    background-color: #474646;
+    color: var(--light-color);
+}
+
+.crypto-info.light {
+    background-color: #D4CEBF;
+    color: var(--dark-color);
+}
+
+
+.coin.dark {
+    border-bottom: 0.3vw solid var(--light-color);;
+}
+
+.coin.light {
+    border-bottom: 0.3vw solid var(--dark-color);
+}
+
+.coin.hidden {
+    display: none;
+}
+
+.coin.full {
+    width: calc(100vw - var(--scrollbar-width));
+}
+
+
+.coin-list {
+    margin-top: 15vh;
+    transition: margin-top 0.5s ease-out;
+}
+
+.coin-list.hidden {
+    margin-top: 0;
+    transition: margin-top 0.5s ease-out;
+}
+
+
+.more-info-container {
+    max-height: 0;
+    max-width: 0;
+    overflow: hidden;
+    display: none;
+    contain: content;
+}
+
+.more-info-container.visible{
+    max-height: 300vh;
+    max-width: calc(100 - var(--scrollbar-width));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}

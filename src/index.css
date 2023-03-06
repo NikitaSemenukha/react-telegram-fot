@@ -1,0 +1,7 @@
+:root {
+    --dark-color: #303132;
+    --light-color: #F0ECE2;
+    --selected-color: #D9A900;
+    --unselected-color: #9B8D69;
+    --scrollbar-width: 17px;
+}

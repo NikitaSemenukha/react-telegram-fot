@@ -1,0 +1,65 @@
+.coin-row {
+    height: 12.15vh;
+    width: calc(75vw - var(--scrollbar-width));
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
+}
+
+.coin-row.dark {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+}
+
+.coin-row.light {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+}
+
+
+.coin-row img {
+    width: 7.5vh;
+    margin-left: 2vw;
+}
+
+
+.coin-name {
+    margin-left: 2vw;
+    font-size: 4vw;
+    font-weight: 400;
+    max-width: 30vw;
+    text-align: start;
+}
+
+
+.coin-symbol {
+    margin-left: auto;
+    margin-right: 3vw;
+    font-size: 5vw;
+    font-weight: 400;
+}
+
+
+.coin-symbol.dark {
+    color: grey;
+}
+
+.coin-symbol.light {
+    color: var(--unselected-color)
+}
+
+
+.star.yellow path {
+    fill: var(--selected-color);
+}
+
+.star.dark path {
+    fill: grey;
+}
+
+.star.light path {
+    fill: var(--unselected-color);
+}

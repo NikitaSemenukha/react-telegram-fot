@@ -1,0 +1,68 @@
+.portfolio p {
+    margin-left: 3vw;
+    margin-top: 3vh;
+    font-size: 2.5vh;
+}
+
+.portfolio h2 {
+    margin-left: 3vw;
+    margin-top: 1vh;
+    font-size: 4vh;
+    font-weight: 400;
+}
+
+.portfolio.dark p {
+    color: #9A9A9A;
+}
+
+.portfolio.dark h2 {
+    color: var(--light-color)
+}
+
+.portfolio.light p {
+    color: var(--unselected-color)
+}
+
+.portfolio.light h2 {
+    color: var(--dark-color)
+}
+
+
+.statistics {
+    height: 90vh;
+}
+
+
+.log-out {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 3vh;
+}
+
+.log-out button {
+    height: 4vh;
+    width: 40vw;
+    font-size: 3.2vh;
+    text-align: center;
+    border: none;
+    outline: none;
+    border-radius: 0.7vh 0.7vh 0.7vh 0.7vh;
+}
+
+.log-out.dark button {
+    background-color: var(--light-color);
+    color: var(--dark-color)
+}
+
+.log-out.light button {
+    background-color: var(--dark-color);
+    color: var(--light-color)
+}
+
+.log-out.dark button:hover {
+    background-color: #9A9A9A;
+}
+
+.log-out.light button:hover {
+    background-color: #636363;
+}

@@ -1,0 +1,62 @@
+.info p{
+    margin-left: 2vw;
+    padding-bottom: 1vh;
+    font-size: 3.8vw;
+}
+
+.info:first-child {
+    padding-top: 1vh;
+}
+
+
+.button-container {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+.button-container.visible {
+    height: auto;
+    width: auto;
+    padding-top: 1vh;
+    padding-bottom: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.button {
+    width: 35vw;
+    height: 4.2vh;
+    font-size: 3.8vw;
+    text-align: center;
+    line-height: 4.5vh;
+    border: none;
+    cursor: pointer;
+    -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
+}
+
+.button.dark {
+    background-color: var(--light-color);
+    color: #636363;
+}
+
+.button.dark:hover {
+    background-color: #9A9A9A;
+    color: var(--light-color);
+}
+
+.button.light {
+    background-color: grey;
+    color: var(--light-color);
+}
+
+.button.light:hover {
+    background-color: #474646;
+}
+
+.button h2 {
+    font-weight: 400;
+}
+
